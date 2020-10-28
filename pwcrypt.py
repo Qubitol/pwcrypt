@@ -1,3 +1,9 @@
+#! /usr/bin/env python3
+
+import sys
+if not sys.version_info[0] == 3:
+    sys.exit('pwcrypt works only with Python 3.')
+
 import tkinter as tk
 import tkinter.font as tkFont
 from PIL import ImageTk, Image
