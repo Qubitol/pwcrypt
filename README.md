@@ -9,10 +9,10 @@ If you use this tool, you are solely responsible on keeping your data safe.
 As I said, the encryption algorithm is really simple.
 This tool aims to help you in adding one more level of protection to the passwords you store (for example) in a book you carry around, which in principle anyone can find and read.
 
-Install the requirements before using the tool, by running:
-`python -m pip install -r requirements.txt`
-and run with:
+Install the requirements before using the tool, by running:  
+`python -m pip install -r requirements.txt`  
+and run with:  
 `./pwcrypt`
 
 ### Postilla for Windows users
-You can run the tool using the *Windows Subsystem for Linux*, but remember to activate an X server (such as [Xming](http://www.straightrunning.com/XmingNotes/) or [Vcxsrv](https://sourceforge.net/projects/vcxsrv/)) and to set the `display` variable.
+You can run the tool using the *Windows Subsystem for Linux*, but remember to activate an X server (such as [Xming](http://www.straightrunning.com/XmingNotes/) or [Vcxsrv](https://sourceforge.net/projects/vcxsrv/)) and to export the `DISPLAY` variable.
