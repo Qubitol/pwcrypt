@@ -35,6 +35,7 @@ def map_num(string):
 
 ### Build the interface
 master = tk.Tk()
+master.title("PwCrypt")
 
 # define fonts
 fontLabel = tkFont.Font(family = "Segoe UI", size = 16)
@@ -96,7 +97,7 @@ button.grid(row = 0, column = 3, rowspan = 2, padx = 30, pady = 30, ipadx = 5, i
 def trash():
     pw.delete(0, tk.END)
     new_pw_text.set("")
-button_trash_pic_bis = Image.open("./icons/trash.png").resize((SIZE_IMG, SIZE_IMG), Image.ANTIALIAS)
+button_trash_pic_bis = Image.open("./images/trash.png").resize((SIZE_IMG, SIZE_IMG), Image.ANTIALIAS)
 button_trash_pic = ImageTk.PhotoImage(button_trash_pic_bis)
 button_trash = tk.Button(master, command = trash, font = fontPassword, image = button_trash_pic, width = SIZE_IMG, height = SIZE_IMG)
 button_trash.grid(row = 0, column = 2, sticky = tk.W, padx = 0, pady = (20,5))
@@ -110,7 +111,7 @@ def clipboard():
     pyperclip.copy(new_pw.get())
     temp.update()
     temp.destroy()
-button_copy_pic_bis = Image.open("./icons/copy.png").resize((SIZE_IMG, SIZE_IMG), Image.ANTIALIAS)
+button_copy_pic_bis = Image.open("./images/copy.png").resize((SIZE_IMG, SIZE_IMG), Image.ANTIALIAS)
 button_copy_pic = ImageTk.PhotoImage(button_copy_pic_bis)
 button_copy = tk.Button(master, command = clipboard, font = fontPassword, image = button_copy_pic, width = SIZE_IMG, height = SIZE_IMG)
 button_copy.grid(row = 1, column = 2, sticky = tk.W, padx = 0, pady = (5,20))
@@ -120,7 +121,7 @@ def start_show_key(event):
     key.config(show = "")
 def stop_show_key(event):
     key.config(show = "*")
-button_show_pic_bis = Image.open("./icons/eye.png").resize((SIZE_IMG, SIZE_IMG), Image.ANTIALIAS)
+button_show_pic_bis = Image.open("./images/eye.png").resize((SIZE_IMG, SIZE_IMG), Image.ANTIALIAS)
 button_show_pic = ImageTk.PhotoImage(button_show_pic_bis)
 button_show = tk.Button(master, font = fontPassword, image = button_show_pic, width = SIZE_IMG, height = SIZE_IMG)
 button_show.grid(row = 2, column = 2, rowspan = 2, sticky = tk.W, padx = 0, pady = (10,20))
