@@ -9,9 +9,8 @@ As I said, the encryption algorithm is really simple.
 This tool aims to help you in adding one more level of protection to the passwords you store (for example) in a book you carry around, which in principle anyone can find and read.
 
 ## Using the script `pwcrypt`
-Install the requirements before using the tool, by running:  
-`python -m pip install -r requirements.txt`  
-and run with:  
+You can find an `environment.yml` file available in the repository for a ready-to-use `conda` environment, containing all of the necessary dependencies.  
+Install the environment, activate it and and run the program with:  
 `./pwcrypt`
 
 ### Postilla for Windows users
@@ -23,10 +22,10 @@ You can run the tool using the *Windows Subsystem for Linux*, but remember to ac
 ## How does the program work?
 After running the program, you will be prompted with a window with the following boxes.  
 The first input box allows to specify a password to encrypt/decrypt.  
-The third and last box allows to specify the encryption key, which will be displayed through "`*`", to hid it.  
+The third and last box allows to specify the encryption key, which will be displayed through "`*`", to hide it.  
 You can further select "Encrypt" or "Decrypt" through the radio button.  
 Once you have specified both a password and a key, you can press the 'Convert' button to run the conversion, the encrypted/decrypted password will be displayed in the second box.
 
-Pressing the "trash" ![](./images/trash.png) button allows to clean the passwords fields.  
-Pressing the "clip" ![](./images/copy.png) button allows to copy the encrypted/decrypted password to the clipboard.  
-Holding the "eye" ![](./images/eye.png) button allows to see the key explicitly.  
+Pressing the "trash" <img src="./images/trash.png" height="40"> button allows to clean the passwords fields.  
+Pressing the "clip" <img src="./images/copy.png" height="40"> button allows to copy the encrypted/decrypted password to the clipboard.  
+Holding the "eye" <img src="./images/eye.png" height="40"> button allows to see the key explicitly.  
